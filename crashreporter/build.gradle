@@ -12,8 +12,8 @@ android {
         applicationId "com.mzstudio.libs.splunkmint"
         minSdkVersion 14
         targetSdkVersion 29
-        versionCode 524
-        versionName "5.2.4"
+        versionCode 525
+        versionName "5.2.5"
         consumerProguardFiles 'proguard.txt'
 
         /**
