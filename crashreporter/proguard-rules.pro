@@ -17,8 +17,11 @@
 #}
 -keepattributes SourceFile, LineNumberTable
 
--renamesourcefileattribute SourceFile
-
 -ignorewarnings
 -dontwarn
 -dontnote
+
+-keep class com.splunk.** { *; }
+
+-libraryjars libs/mint-android-sdk-5.2.5.jar
+

@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.splunk.mint.gradle.android.plugin'
 apply plugin: 'com.github.dcendents.android-maven'  
 
 group='io.github.mzstudio21'
@@ -10,11 +9,13 @@ android {
     buildToolsVersion "29.0.3"
   
     defaultConfig {
-        applicationId "com.mzstudio.libs.crashreport"
-        minSdkVersion 19
-        targetSdkVersion 30
-        versionCode 100
-        versionName "1.0.0"
+        applicationId "com.mzstudio.libs.splunkmint"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 524
+        versionName "5.2.4"
+        consumerProguardFiles 'proguard.txt'
+
         /**
           * Don't use mulidex or minsdk >= 21
           * Use minifyEnabled true
@@ -30,6 +31,5 @@ android {
 }
 
 dependencies {
-        implementation 'com.splunk:mint-android-sdk:5.2.5'
         implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
